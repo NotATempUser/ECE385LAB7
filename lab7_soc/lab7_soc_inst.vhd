@@ -12,7 +12,9 @@
 			sdram_wire_dq    : inout std_logic_vector(31 downto 0) := (others => 'X'); -- dq
 			sdram_wire_dqm   : out   std_logic_vector(3 downto 0);                     -- dqm
 			sdram_wire_ras_n : out   std_logic;                                        -- ras_n
-			sdram_wire_we_n  : out   std_logic                                         -- we_n
+			sdram_wire_we_n  : out   std_logic;                                        -- we_n
+			keys_export      : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- export
+			sw_export        : in    std_logic_vector(7 downto 0)  := (others => 'X')  -- export
 		);
 	end component lab7_soc;
 
@@ -30,6 +32,8 @@
 			sdram_wire_dq    => CONNECTED_TO_sdram_wire_dq,    --           .dq
 			sdram_wire_dqm   => CONNECTED_TO_sdram_wire_dqm,   --           .dqm
 			sdram_wire_ras_n => CONNECTED_TO_sdram_wire_ras_n, --           .ras_n
-			sdram_wire_we_n  => CONNECTED_TO_sdram_wire_we_n   --           .we_n
+			sdram_wire_we_n  => CONNECTED_TO_sdram_wire_we_n,  --           .we_n
+			keys_export      => CONNECTED_TO_keys_export,      --       keys.export
+			sw_export        => CONNECTED_TO_sw_export         --         sw.export
 		);
 
