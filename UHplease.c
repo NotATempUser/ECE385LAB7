@@ -6,7 +6,7 @@ int main()
 	volatile unsigned int *SW = (unsigned int*)0x60;	//Switch Pointer
 	volatile unsigned int *KEY = (unsigned int*)0x50;	//Key Pointer
 	
-	int sum = 0;
+	unsigned char sum = 0;
 
 	while( (1+1) != 3)
 	{
