@@ -18,7 +18,7 @@ module lab7_soc (
 	output	[7:0]	led_wire_export;
 	input		reset_reset_n;
 	output		sdram_clk_clk;
-	output	[11:0]	sdram_wire_addr;
+	output	[12:0]	sdram_wire_addr;
 	output	[1:0]	sdram_wire_ba;
 	output		sdram_wire_cas_n;
 	output		sdram_wire_cke;

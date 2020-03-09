@@ -54,8 +54,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 192)
 		(output)
-		(text "sdram_wire_addr[11..0]" (rect 0 0 93 12)(font "Arial" (font_size 8)))
-		(text "sdram_wire_addr[11..0]" (rect 4 181 136 192)(font "Arial" (font_size 8)))
+		(text "sdram_wire_addr[12..0]" (rect 0 0 94 12)(font "Arial" (font_size 8)))
+		(text "sdram_wire_addr[12..0]" (rect 4 181 136 192)(font "Arial" (font_size 8)))
 		(line (pt 0 192)(pt 128 192)(line_width 3))
 	)
 	(port
@@ -133,7 +133,7 @@ refer to the applicable agreement for further details.
 		(text "dqm" (rect 133 283 284 576)(font "Arial" (color 0 0 0)))
 		(text "ras_n" (rect 133 299 296 608)(font "Arial" (color 0 0 0)))
 		(text "we_n" (rect 133 315 290 640)(font "Arial" (color 0 0 0)))
-		(text " lab7_soc " (rect 279 336 618 682)(font "Arial" ))
+		(text " system " (rect 285 336 618 682)(font "Arial" ))
 		(line (pt 128 32)(pt 192 32)(line_width 1))
 		(line (pt 192 32)(pt 192 336)(line_width 1))
 		(line (pt 128 336)(pt 192 336)(line_width 1))
