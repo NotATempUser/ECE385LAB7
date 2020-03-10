@@ -10,15 +10,15 @@ int main()
 
 	while( (1+1) != 3)
 	{
-		if(*KEY == 0x3)
+		if(!(*KEY & 0x2))
 		{
 			sum = 0;
 		}
-		else if(*KEY == 0x4)
+		else if(!(*KEY & 0x4))
 		{
 			sum += *SW;
 			
-			while(*KEY == 0x4)
+			while(!(*KEY & 0x4))
 			{
 			}
 		}
